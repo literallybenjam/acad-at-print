@@ -7,7 +7,10 @@
 
 @media print {
 
-    * {
+    *:root:root:root * {
+        margin: 0;
+        border: 0;
+        padding: 0;
         font-family: inherit;
         font-size: inherit;
         font-weight: inherit;
@@ -17,7 +20,7 @@
         text-decoration: none;
     }
 
-    html, body {
+    *:root:root:root html, *:root:root:root body {
         margin: 0;
         border: none;
         padding: 0;
@@ -35,11 +38,11 @@
         hyphens: auto;
         counter-reset: acad-at-print;
     }
-    html {
+    *:root:root:root html {
         margin: .5in 1in;
         padding: .5in 0;
     }
-    html::before {
+    *:root:root:root html::before {
         display: block;
         position: fixed;
         margin: 0;
@@ -54,7 +57,7 @@
         counter-increment: acad-at-print;
         content: attr(data-acad-tl) "\0A" attr(data-acad-tm) "\0A" attr(data-acad-tr);
     }
-    html::after {
+    *:root:root:root html::after {
         display: block;
         position: fixed;
         columns: 3;
@@ -65,96 +68,105 @@
         line-height: 1;
         content: attr(data-acad-bl) "\0A" attr(data-acad-bm) "\0A" attr(data-acad-br);
     }
-    html[data-acad-pagepos=tl]::before {
+    *:root:root:root html[data-acad-pagepos=tl]::before {
         content: counter(acad-at-print) attr(data-acad-tl) "\0A" attr(data-acad-tm) "\0A" attr(data-acad-tr);
     }
-    html[data-acad-pagepos=tm]::before {
+    *:root:root:root html[data-acad-pagepos=tm]::before {
         content: attr(data-acad-tl) "\0A" attr(data-acad-tm) counter(acad-at-print) "\0A" attr(data-acad-tr);
     }
-    html[data-acad-pagepos=tr]::before {
+    *:root:root:root html[data-acad-pagepos=tr]::before {
         content: attr(data-acad-tl) "\0A" attr(data-acad-tm) "\0A" attr(data-acad-tr) counter(acad-at-print);
     }
-    html[data-acad-pagepos=bl]::after {
+    *:root:root:root html[data-acad-pagepos=bl]::after {
         content: counter(acad-at-print) attr(data-acad-bl) "\0A" attr(data-acad-bm) "\0A" attr(data-acad-br);
     }
-    html[data-acad-pagepos=bm]::after {
+    *:root:root:root html[data-acad-pagepos=bm]::after {
         content: attr(data-acad-bl) "\0A" attr(data-acad-bm) counter(acad-at-print) "\0A" attr(data-acad-br);
     }
-    html[data-acad-pagepos=br]::after {
+    *:root:root:root html[data-acad-pagepos=br]::after {
         content: attr(data-acad-bl) "\0A" attr(data-acad-bm) "\0A" attr(data-acad-br) counter(acad-at-print);
     }
 
-    body::before {
+    *:root:root:root body::before {
         line-height: 1;
         content: attr(data-acad-author) "\0A" attr(data-acad-date) "\0A" attr(data-acad-professor) "\0A" attr(data-acad-course);
     }
 
-    header, h1, h2, h3, h4, h5, h6 {
+    *:root:root:root header, *:root:root:root h1, *:root:root:root h2, *:root:root:root h3, *:root:root:root h4, *:root:root:root h5, *:root:root:root h6 {
         text-decoration: underline;
         text-align: left;
     }
 
-    header, h1, h2 {
+    *:root:root:root header, *:root:root:root h1, *:root:root:root h2 {
         text-align: center;
         line-height: 1;
     }
 
-    aside, nav, [data-acad-hidden] {
+    *:root:root:root aside, *:root:root:root nav, *:root:root:root [data-acad-hidden], *:root:root:root audio, *:root:root:root video {
         display: none;
     }
 
-    h1 {
+    *:root:root:root h1 {
         font-weight: bold;
     }
 
-    h2, h3 {
+    *:root:root:root h2, *:root:root:root h3 {
         text-decoration: underline;
     }
 
-    h4 {
+    *:root:root:root h4 {
         font-variant: small-caps;
     }
 
-    hr {
+    *:root:root:root hr {
         margin: 1rem;
         border: none;
         padding: none;
     }
 
-    blockquote {
+    *:root:root:root ul, ol {
+        padding-left: 2rem;
+    }
+
+    *:root:root:root img, *:root:root:root figure {
+        margin: auto;
+        max-width: 100%;
+    }
+
+    *:root:root:root blockquote {
         margin: 0 3rem;
     }
 
-    p {
+    *:root:root:root p {
         margin: none;
     }
 
-    p + p, h3 + p, h4 + p, h5 + p, h6 + p {
+    *:root:root:root p + p, *:root:root:root h3 + p, *:root:root:root h4 + p, *:root:root:root h5 + p, *:root:root:root h6 + p {
         text-indent: 2rem;
     }
 
-    a {
+    *:root:root:root a {
         text-decoration: underline;
         text-decoration-style: dashed;
     }
 
-    a::after {
+    *:root:root:root a::after {
         content: " [" attr(href) "]";
     }
 
-    em {
+    *:root:root:root em {
         text-decoration: underline;
     }
 
-    i {
+    *:root:root:root i {
         font-style: italic;
     }
 
-    b, strong {
+    *:root:root:root b, *:root:root:root strong {
         font-weight: bold;
     }
 
-    small {
+    *:root:root:root small {
         font-size: 1ex;
     }
 
