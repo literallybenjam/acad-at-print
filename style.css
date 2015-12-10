@@ -107,6 +107,12 @@
     }
 
     *:root:root:root header, *:root:root:root h1, *:root:root:root h2, *:root:root:root h3, *:root:root:root h4, *:root:root:root h5, *:root:root:root h6 {
+        width: auto;
+        height: auto;
+        -webkit-logical-width: auto;
+        -webkit-logical-height: auto;
+        block-size: auto;
+        inline-size: auto;
         display: block;
         margin: 1rem 0 0;
         text-decoration: underline;
