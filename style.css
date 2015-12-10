@@ -94,22 +94,22 @@
         content: attr(data-acad-bl) "\0A" attr(data-acad-bm) "\0A" attr(data-acad-br);
     }
     html[data-acad-pagepos=tl]:root:root:root:root:root:root:root:root:root:root::before {
-        content: counter(acad-at-print) attr(data-acad-tl) "\0A" attr(data-acad-tm) "\0A" attr(data-acad-tr);
+        content: counter(acad-at-print) " " attr(data-acad-tl) "\0A" attr(data-acad-tm) "\0A" attr(data-acad-tr);
     }
     html[data-acad-pagepos=tm]:root:root:root:root:root:root:root:root:root:root::before {
-        content: attr(data-acad-tl) "\0A" attr(data-acad-tm) counter(acad-at-print) "\0A" attr(data-acad-tr);
+        content: attr(data-acad-tl) "\0A" attr(data-acad-tm) " " counter(acad-at-print) "\0A" attr(data-acad-tr);
     }
     html[data-acad-pagepos=tr]:root:root:root:root:root:root:root:root:root:root::before {
-        content: attr(data-acad-tl) "\0A" attr(data-acad-tm) "\0A" attr(data-acad-tr) counter(acad-at-print);
+        content: attr(data-acad-tl) "\0A" attr(data-acad-tm) "\0A" attr(data-acad-tr) " " counter(acad-at-print);
     }
     html[data-acad-pagepos=bl]:root:root:root:root:root:root:root:root:root:root::after {
-        content: counter(acad-at-print) attr(data-acad-bl) "\0A" attr(data-acad-bm) "\0A" attr(data-acad-br);
+        content: counter(acad-at-print) " " attr(data-acad-bl) "\0A" attr(data-acad-bm) "\0A" attr(data-acad-br);
     }
     html[data-acad-pagepos=bm]:root:root:root:root:root:root:root:root:root:root::after {
-        content: attr(data-acad-bl) "\0A" attr(data-acad-bm) counter(acad-at-print) "\0A" attr(data-acad-br);
+        content: attr(data-acad-bl) "\0A" attr(data-acad-bm) " " counter(acad-at-print) "\0A" attr(data-acad-br);
     }
     html[data-acad-pagepos=br]:root:root:root:root:root:root:root:root:root:root::after {
-        content: attr(data-acad-bl) "\0A" attr(data-acad-bm) "\0A" attr(data-acad-br) counter(acad-at-print);
+        content: attr(data-acad-bl) "\0A" attr(data-acad-bm) "\0A" attr(data-acad-br) " " counter(acad-at-print);
     }
     html[data-acad-headalign=right]:root:root:root:root:root:root:root:root:root:root::before {
         text-align: right;
