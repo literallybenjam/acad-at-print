@@ -21,7 +21,7 @@
         text-decoration: none;
     }
 
-    *:root:root:root html, *:root:root:root body {
+    *:root:root:root html, *:root:root:root body, *:root:root:root main {
         margin: 0;
         border: none;
         padding: 0;
