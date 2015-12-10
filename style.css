@@ -8,6 +8,7 @@
 @media print {
 
     *:root:root:root * {
+        display: initial;
         margin: 0;
         border: 0;
         padding: 0;
