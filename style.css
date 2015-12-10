@@ -1,6 +1,6 @@
 @page {
-    margin: .5in 1in;
-    padding: .5in 0;
+    margin: 0;
+    padding: 0;
     orphans: 2;
     widows: 2;
 }
@@ -34,6 +34,10 @@
         quotes: "“" "”" "‘" "’";
         hyphens: auto;
         counter-reset: acad-at-print;
+    }
+    html {
+        margin: .5in 1in;
+        padding: .5in 0;
     }
     html::before {
         display: block;
