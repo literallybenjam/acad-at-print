@@ -1,5 +1,5 @@
 @page {
-    margin: 0;
+    margin: .5in 1in;
     padding: 0;
     orphans: 2;
     widows: 2;
@@ -24,6 +24,10 @@
         margin: 0;
         border: none;
         padding: 0;
+        width: auto;
+        height: auto;
+        max-width: none;
+        max-height: none;
         color: black;
         background: none;
         font-family: Times New Roman, Times, Palatino, Century Schoolbook, Hoefler Text, Georgia, Arial, serif;
