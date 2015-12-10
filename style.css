@@ -21,6 +21,9 @@
     }
 
     html:root:root:root:root:root:root:root:root:root:root, *:root:root:root:root:root:root:root:root:root:root body, *:root:root:root:root:root:root:root:root:root:root main {
+        -webkit-writing-mode: horizontal-tb;
+        -ms-writing-mode: horizontal-tb;
+        writing-mode: horizontal-tb;
         position: static;
         display: block;
         margin: 0;
