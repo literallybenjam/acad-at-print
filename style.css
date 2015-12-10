@@ -8,6 +8,7 @@
 @media print {
 
     *:root:root:root * {
+        position: static;
         margin: 0;
         border: 0;
         padding: 0;
@@ -99,6 +100,7 @@
 
     *:root:root:root header, *:root:root:root h1, *:root:root:root h2, *:root:root:root h3, *:root:root:root h4, *:root:root:root h5, *:root:root:root h6 {
         display: block;
+        margin: 1rem 0 0;
         text-decoration: underline;
         text-align: left;
     }
