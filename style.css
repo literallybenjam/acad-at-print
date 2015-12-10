@@ -65,10 +65,11 @@
         -webkit-columns: 3;
         -moz-columns: 3;
         columns: 3;
-        top: 0;
-        right: 0;
-        left: 0;
+        top: .5in;
+        right: 1in;
+        left: 1in;
         height: 1rem;
+        text-align: center;
         line-height: 1;
         white-space: pre;
         counter-increment: acad-at-print;
@@ -83,10 +84,11 @@
         -webkit-columns: 3;
         -moz-columns: 3;
         columns: 3;
-        bottom: 0;
-        right: 0;
-        left: 0;
+        bottom: .5in;
+        right: 1in;
+        left: 1in;
         height: 1rem;
+        text-align: center;
         line-height: 1;
         white-space: pre;
         content: attr(data-acad-bl) "\0A" attr(data-acad-bm) "\0A" attr(data-acad-br);
@@ -108,6 +110,18 @@
     }
     html[data-acad-pagepos=br]:root:root:root:root:root:root:root:root:root:root::after {
         content: attr(data-acad-bl) "\0A" attr(data-acad-bm) "\0A" attr(data-acad-br) counter(acad-at-print);
+    }
+    html[data-acad-headalign=right]:root:root:root:root:root:root:root:root:root:root::before {
+        text-align: right;
+    }
+    html[data-acad-headalign=left]:root:root:root:root:root:root:root:root:root:root::before {
+        text-align: left;
+    }
+    html[data-acad-footalign=right]:root:root:root:root:root:root:root:root:root:root::after {
+        text-align: right;
+    }
+    html[data-acad-footalign=left]:root:root:root:root:root:root:root:root:root:root::after {
+        text-align: left;
     }
 
     *:root:root:root:root:root:root:root:root:root:root body::before {

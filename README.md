@@ -30,5 +30,7 @@ In addition, you can set metadata on the `<html>` element to modify the headers 
 - `data-acad-bm` : Bottom-middle
 - `data-acad-br` : Bottom-right
 - `data-acad-pagepos` : Page number position. Must be one of : `none` `tl` `tm` `tr` `bl` `bm` `br`. Defaults to `none`.
+- `data-acad-headalign` : Text-alignment for header. Must be one of `right` `center` `left`. Defaults to `center`.
+- `data-acad-footalign` : Text-alignment for footer. Must be one of `right` `center` `left`. Defaults to `center`.
 
 `<aside>s`, `<nav>s`, and any element with the attribute `data-acad-hidden` will not be displayed.
