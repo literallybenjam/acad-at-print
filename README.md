@@ -18,7 +18,7 @@ Just include `style.css` in the webpage.
 You can set metadata on the `<body>` element to add a header to your document:
 - `data-acad-author`
 - `data-acad-date`
-– `data-acad-professor`
+- `data-acad-professor`
 - `data-acad-course`
 
 `<aside>s`, `<nav>s`, and any element with the attribute `data-acad-hidden` will not be displayed.
