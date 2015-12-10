@@ -53,9 +53,74 @@
         counter-reset: acad-at-print;
     }
 
-    *:root:root:root:root:root:root:root:root:root:root body::before {
+    *:root:root:root:root:root:root:root:root:root:root body[data-acad-author][data-acad-date][data-acad-professor][data-acad-course]::before {
         line-height: 1;
         content: attr(data-acad-author) "\0A" attr(data-acad-date) "\0A" attr(data-acad-professor) "\0A" attr(data-acad-course);
+        white-space: pre;
+    }
+    *:root:root:root:root:root:root:root:root:root:root body[data-acad-author][data-acad-date][data-acad-professor]::before {
+        line-height: 1;
+        content: attr(data-acad-author) "\0A" attr(data-acad-date) "\0A" attr(data-acad-professor);
+        white-space: pre;
+    }
+    *:root:root:root:root:root:root:root:root:root:root body[data-acad-author][data-acad-date][data-acad-course]::before {
+        line-height: 1;
+        content: attr(data-acad-author) "\0A" attr(data-acad-date) "\0A" attr(data-acad-course);
+        white-space: pre;
+    }
+    *:root:root:root:root:root:root:root:root:root:root body[data-acad-author][data-acad-date]::before {
+        line-height: 1;
+        content: attr(data-acad-author) "\0A" attr(data-acad-date);
+        white-space: pre;
+    }
+    *:root:root:root:root:root:root:root:root:root:root body[data-acad-author][data-acad-professor][data-acad-course]::before {
+        line-height: 1;
+        content: attr(data-acad-author) "\0A" attr(data-acad-professor) "\0A" attr(data-acad-course);
+        white-space: pre;
+    }
+    *:root:root:root:root:root:root:root:root:root:root body[data-acad-author][data-acad-professor]::before {
+        line-height: 1;
+        content: attr(data-acad-author) "\0A" attr(data-acad-professor);
+        white-space: pre;
+    }
+    *:root:root:root:root:root:root:root:root:root:root body[data-acad-author][data-acad-course]::before {
+        line-height: 1;
+        content: attr(data-acad-author) "\0A" attr(data-acad-course);
+        white-space: pre;
+    }
+    *:root:root:root:root:root:root:root:root:root:root body[data-acad-author]::before {
+        line-height: 1;
+        content: attr(data-acad-author);
+        white-space: pre;
+    }
+    *:root:root:root:root:root:root:root:root:root:root body[data-acad-date][data-acad-professor][data-acad-course]::before {
+        line-height: 1;
+        content: attr(data-acad-date) "\0A" attr(data-acad-professor) "\0A" attr(data-acad-course);
+        white-space: pre;
+    }
+    *:root:root:root:root:root:root:root:root:root:root body[data-acad-date][data-acad-professor]::before {
+        line-height: 1;
+        content: attr(data-acad-date) "\0A" attr(data-acad-professor);
+        white-space: pre;
+    }
+    *:root:root:root:root:root:root:root:root:root:root body[data-acad-date][data-acad-course]::before {
+        line-height: 1;
+        content: attr(data-acad-date) "\0A" attr(data-acad-course);
+        white-space: pre;
+    }
+    *:root:root:root:root:root:root:root:root:root:root body[data-acad-date]::before {
+        line-height: 1;
+        content: attr(data-acad-date);
+        white-space: pre;
+    }
+    *:root:root:root:root:root:root:root:root:root:root body[data-acad-professor][data-acad-course]::before {
+        line-height: 1;
+        content: attr(data-acad-professor) "\0A" attr(data-acad-course);
+        white-space: pre;
+    }
+    *:root:root:root:root:root:root:root:root:root:root body[data-acad-professor]::before {
+        line-height: 1;
+        content: attr(data-acad-professor);
         white-space: pre;
     }
 
