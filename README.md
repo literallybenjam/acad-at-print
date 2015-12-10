@@ -9,8 +9,6 @@ Doesn't affect screen display at all, but wipes anything in the following pseudo
 
 - body::before
 
-Headers and footers require support for `columns`.
-
 ##  Usage:
 
 Just include `style.css` in the webpage.
