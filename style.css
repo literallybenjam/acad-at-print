@@ -8,7 +8,6 @@
 @media print {
 
     *:root:root:root:root:root:root:root:root:root:root * {
-        position: static;
         margin: 0;
         border: 0;
         padding: 0;
@@ -23,6 +22,7 @@
     }
 
     html:root:root:root:root:root:root:root:root:root:root, *:root:root:root:root:root:root:root:root:root:root body, *:root:root:root:root:root:root:root:root:root:root main {
+        position: static;
         display: block;
         margin: 0;
         border: none;
@@ -132,6 +132,7 @@
     }
 
     *:root:root:root:root:root:root:root:root:root:root header, *:root:root:root:root:root:root:root:root:root:root h1, *:root:root:root:root:root:root:root:root:root:root h2, *:root:root:root:root:root:root:root:root:root:root h3, *:root:root:root:root:root:root:root:root:root:root h4, *:root:root:root:root:root:root:root:root:root:root h5, *:root:root:root:root:root:root:root:root:root:root h6 {
+        position: static;
         width: auto;
         height: auto;
         -webkit-logical-width: auto;
