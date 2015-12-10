@@ -53,6 +53,10 @@
         hyphens: auto;
         counter-reset: acad-at-print;
     }
+    html {
+        margin: .5in 1in;
+        padding: .5in 0;
+    }
     html:root:root:root:root:root:root:root:root:root:root::before {
         display: block;
         position: fixed;
