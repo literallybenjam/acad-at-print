@@ -127,6 +127,7 @@
     *:root:root:root:root:root:root:root:root:root:root body::before {
         line-height: 1;
         content: attr(data-acad-author) "\0A" attr(data-acad-date) "\0A" attr(data-acad-professor) "\0A" attr(data-acad-course);
+        white-space: pre;
     }
 
     *:root:root:root:root:root:root:root:root:root:root header, *:root:root:root:root:root:root:root:root:root:root h1, *:root:root:root:root:root:root:root:root:root:root h2, *:root:root:root:root:root:root:root:root:root:root h3, *:root:root:root:root:root:root:root:root:root:root h4, *:root:root:root:root:root:root:root:root:root:root h5, *:root:root:root:root:root:root:root:root:root:root h6 {
