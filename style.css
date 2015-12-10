@@ -21,7 +21,7 @@
         text-decoration: none;
     }
 
-    *:root:root:root:root:root:root:root:root:root:root html, *:root:root:root:root:root:root:root:root:root:root body, *:root:root:root:root:root:root:root:root:root:root main {
+    html:root:root:root:root:root:root:root:root:root:root, *:root:root:root:root:root:root:root:root:root:root body, *:root:root:root:root:root:root:root:root:root:root main {
         display: block;
         margin: 0;
         border: none;
