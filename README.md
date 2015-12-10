@@ -2,7 +2,8 @@
 
 Formats a webpage like an academic essay when it is printed, through the use of `@page` and CSS Media Queries.
 
-12pt times, double-spaced, page numbers in the top-right, 1in margins, all that fun stuff.
+12pt times, double-spaced, 1in margins, all that fun stuff.
+You'll have to do headers and footers through your browser settings until browsers start to support CSS definitions there.
 
 Doesn't affect screen display at all, but wipes anything in the following pseudo-elements when you print:
 
