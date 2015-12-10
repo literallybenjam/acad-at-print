@@ -1,0 +1,157 @@
+@page {
+    margin: .5in 1in;
+    padding: .5in 0;
+    orphans: 2;
+    widows: 2;
+}
+
+@media print {
+
+    * {
+        font-family: inherit;
+        font-size: inherit;
+        font-weight: inherit;
+        font-style: inherit;
+        line-height: inherit;
+        color: inherit;
+        text-decoration: none;
+    }
+
+    html, body {
+        margin: 0;
+        border: none;
+        padding: 0;
+        color: black;
+        background: none;
+        font-family: Times New Roman, Times, Palatino, Century Schoolbook, Hoefler Text, Georgia, Arial, serif;
+        font-size: 12pt;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        line-height: 2;
+        text-align: justify;
+        white-space: normal;
+        quotes: "“" "”" "‘" "’";
+        hyphens: auto;
+        counter-reset: acad-at-print;
+    }
+    html::before {
+        display: block;
+        position: fixed;
+        margin: 0;
+        border: none;
+        padding: 0;
+        columns: 3;
+        top: 0;
+        right: 0;
+        left: 0;
+        height: 1rem;
+        line-height: 1;
+        counter-increment: acad-at-print;
+        content: attr(data-acad-tl) "\0A" attr(data-acad-tm) "\0A" attr(data-acad-tr);
+    }
+    html::after {
+        display: block;
+        position: fixed;
+        columns: 3;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        height: 1rem;
+        line-height: 1;
+        content: attr(data-acad-bl) "\0A" attr(data-acad-bm) "\0A" attr(data-acad-br);
+    }
+    html[data-acad-pagepos=tl]::before {
+        content: counter(acad-at-print) attr(data-acad-tl) "\0A" attr(data-acad-tm) "\0A" attr(data-acad-tr);
+    }
+    html[data-acad-pagepos=tm]::before {
+        content: attr(data-acad-tl) "\0A" attr(data-acad-tm) counter(acad-at-print) "\0A" attr(data-acad-tr);
+    }
+    html[data-acad-pagepos=tr]::before {
+        content: attr(data-acad-tl) "\0A" attr(data-acad-tm) "\0A" attr(data-acad-tr) counter(acad-at-print);
+    }
+    html[data-acad-pagepos=bl]::after {
+        content: counter(acad-at-print) attr(data-acad-bl) "\0A" attr(data-acad-bm) "\0A" attr(data-acad-br);
+    }
+    html[data-acad-pagepos=bm]::after {
+        content: attr(data-acad-bl) "\0A" attr(data-acad-bm) counter(acad-at-print) "\0A" attr(data-acad-br);
+    }
+    html[data-acad-pagepos=br]::after {
+        content: attr(data-acad-bl) "\0A" attr(data-acad-bm) "\0A" attr(data-acad-br) counter(acad-at-print);
+    }
+
+    body::before {
+        line-height: 1;
+        content: attr(data-acad-author) "\0A" attr(data-acad-date) "\0A" attr(data-acad-professor) "\0A" attr(data-acad-course);
+    }
+
+    header, h1, h2, h3, h4, h5, h6 {
+        text-decoration: underline;
+        text-align: left;
+    }
+
+    header, h1, h2 {
+        text-align: center;
+        line-height: 1;
+    }
+
+    aside, nav, [data-acad-hidden] {
+        display: none;
+    }
+
+    h1 {
+        font-weight: bold;
+    }
+
+    h2, h3 {
+        text-decoration: underline;
+    }
+
+    h4 {
+        font-variant: small-caps;
+    }
+
+    hr {
+        margin: 1rem;
+        border: none;
+        padding: none;
+    }
+
+    blockquote {
+        margin: 0 3rem;
+    }
+
+    p {
+        margin: none;
+    }
+
+    p + p, h3 + p, h4 + p, h5 + p, h6 + p {
+        text-indent: 2rem;
+    }
+
+    a {
+        text-decoration: underline;
+        text-decoration-style: dashed;
+    }
+
+    a::after {
+        content: " [" attr(href) "]";
+    }
+
+    em {
+        text-decoration: underline;
+    }
+
+    i {
+        font-style: italic;
+    }
+
+    b, strong {
+        font-weight: bold;
+    }
+
+    small {
+        font-size: 1ex;
+    }
+
+}
