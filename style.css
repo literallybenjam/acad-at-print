@@ -140,7 +140,7 @@
         block-size: auto;
         inline-size: auto;
         display: block;
-        margin: 1rem 0 0;
+        margin: 2rem 0 0;
         text-decoration: underline;
         text-align: left;
     }
@@ -182,7 +182,7 @@
     }
 
     *:root:root:root:root:root:root:root:root:root:root blockquote {
-        margin: 0 3rem;
+        margin: 2rem 3rem;
     }
 
     *:root:root:root:root:root:root:root:root:root:root p {
