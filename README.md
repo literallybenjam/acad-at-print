@@ -6,8 +6,6 @@ Formats a webpage like an academic essay when it is printed, through the use of 
 
 Doesn't affect screen display at all, but wipes anything in the following pseudo-elements when you print:
 
-- html::before
-- html::after
 - body::before
 
 Headers and footers require support for `columns`.
