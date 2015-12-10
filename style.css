@@ -28,8 +28,16 @@
         padding: 0;
         width: auto;
         height: auto;
+        -webkit-logical-width: auto;
+        -webkit-logical-height: auto;
+        block-size: auto;
+        inline-size: auto;
         max-width: none;
         max-height: none;
+        -webkit-max-logical-width: none;
+        -webkit-max-logical-height: none;
+        max-inline-size: none;
+        max-block-size: none;
         color: black;
         background: none;
         font-family: Times New Roman, Times, Palatino, Century Schoolbook, Hoefler Text, Georgia, Arial, serif;
