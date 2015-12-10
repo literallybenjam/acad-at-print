@@ -62,24 +62,33 @@
         margin: 0;
         border: none;
         padding: 0;
+        -webkit-columns: 3;
+        -moz-columns: 3;
         columns: 3;
         top: 0;
         right: 0;
         left: 0;
         height: 1rem;
         line-height: 1;
+        white-space: pre;
         counter-increment: acad-at-print;
         content: attr(data-acad-tl) "\0A" attr(data-acad-tm) "\0A" attr(data-acad-tr);
     }
     html:root:root:root:root:root:root:root:root:root:root::after {
         display: block;
         position: fixed;
+        margin: 0;
+        border: none;
+        padding: 0;
+        -webkit-columns: 3;
+        -moz-columns: 3;
         columns: 3;
         bottom: 0;
         right: 0;
         left: 0;
         height: 1rem;
         line-height: 1;
+        white-space: pre;
         content: attr(data-acad-bl) "\0A" attr(data-acad-bm) "\0A" attr(data-acad-br);
     }
     html[data-acad-pagepos=tl]:root:root:root:root:root:root:root:root:root:root::before {
