@@ -196,7 +196,7 @@
 
     *:root:root:root:root:root:root:root:root:root:root a[href]::after {
         content: " [" attr(href) "]";
-        font-size: 1ex;
+        font-size: .75em;
     }
 
     *:root:root:root:root:root:root:root:root:root:root em {
@@ -212,7 +212,7 @@
     }
 
     *:root:root:root:root:root:root:root:root:root:root small {
-        font-size: 1ex;
+        font-size: .75em;
     }
 
 }
