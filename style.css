@@ -189,13 +189,14 @@
         text-indent: 2rem;
     }
 
-    *:root:root:root:root:root:root:root:root:root:root a {
+    *:root:root:root:root:root:root:root:root:root:root a[href] {
         text-decoration: underline;
         text-decoration-style: dashed;
     }
 
-    *:root:root:root:root:root:root:root:root:root:root a::after {
+    *:root:root:root:root:root:root:root:root:root:root a[href]::after {
         content: " [" attr(href) "]";
+        font-size: 1ex;
     }
 
     *:root:root:root:root:root:root:root:root:root:root em {
